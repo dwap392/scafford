@@ -12,6 +12,8 @@ class CreateMessages < ActiveRecord::Migration[5.1]
       t.text :main
       t.text :dessert
 
+      t.index :code, unique: true
+
       t.timestamps
     end
   end
