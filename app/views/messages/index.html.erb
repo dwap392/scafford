@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Messages</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Code</th>
+      <th>Name</th>
+      <th>Top</th>
+      <th>Drink</th>
+      <th>Coldstarter</th>
+      <th>Warmstarter</th>
+      <th>Soup</th>
+      <th>Seafood</th>
+      <th>Main</th>
+      <th>Dessert</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @messages.each do |message| %>
+      <tr>
+        <td><%= message.code %></td>
+        <td><%= message.name %></td>
+        <td><%= message.top %></td>
+        <td><%= message.drink %></td>
+        <td><%= message.coldstarter %></td>
+        <td><%= message.warmstarter %></td>
+        <td><%= message.soup %></td>
+        <td><%= message.seafood %></td>
+        <td><%= message.main %></td>
+        <td><%= message.dessert %></td>
+        <td><%= link_to 'Show', message %></td>
+        <td><%= link_to 'Edit', edit_message_path(message) %></td>
+        <td><%= link_to 'Destroy', message, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Message', new_message_path %>

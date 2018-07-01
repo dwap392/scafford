@@ -1,0 +1,67 @@
+<%= form_with(model: message, local: true) do |form| %>
+  <% if message.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(message.errors.count, "error") %> prohibited this message from being saved:</h2>
+
+      <ul>
+      <% message.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :code %>
+    <%= form.number_field :code, id: :message_code %>
+  </div>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name, id: :message_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :top %>
+    <%= form.text_area :top, id: :message_top %>
+  </div>
+
+  <div class="field">
+    <%= form.label :drink %>
+    <%= form.text_area :drink, id: :message_drink %>
+  </div>
+
+  <div class="field">
+    <%= form.label :coldstarter %>
+    <%= form.text_area :coldstarter, id: :message_coldstarter %>
+  </div>
+
+  <div class="field">
+    <%= form.label :warmstarter %>
+    <%= form.text_area :warmstarter, id: :message_warmstarter %>
+  </div>
+
+  <div class="field">
+    <%= form.label :soup %>
+    <%= form.text_area :soup, id: :message_soup %>
+  </div>
+
+  <div class="field">
+    <%= form.label :seafood %>
+    <%= form.text_area :seafood, id: :message_seafood %>
+  </div>
+
+  <div class="field">
+    <%= form.label :main %>
+    <%= form.text_area :main, id: :message_main %>
+  </div>
+
+  <div class="field">
+    <%= form.label :dessert %>
+    <%= form.text_area :dessert, id: :message_dessert %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
