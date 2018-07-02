@@ -52,3 +52,10 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+#add
+gem 'pg'
+# scaffold確認用に必要
+gem 'therubyracer', platforms: :ruby
+gem 'jquery-rails'
+#gem 'turbolinks'

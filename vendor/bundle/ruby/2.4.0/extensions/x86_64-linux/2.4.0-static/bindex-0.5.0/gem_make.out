@@ -1,0 +1,15 @@
+current directory: /home/nmikuni/ruby-work/scafford/vendor/bundle/ruby/2.4.0/gems/bindex-0.5.0/ext/bindex
+/home/nmikuni/.rbenv/versions/2.4.1/bin/ruby -r ./siteconf20180701-83708-19m65mu.rb extconf.rb
+creating Makefile
+
+current directory: /home/nmikuni/ruby-work/scafford/vendor/bundle/ruby/2.4.0/gems/bindex-0.5.0/ext/bindex
+make "DESTDIR=" clean
+
+current directory: /home/nmikuni/ruby-work/scafford/vendor/bundle/ruby/2.4.0/gems/bindex-0.5.0/ext/bindex
+make "DESTDIR="
+compiling cruby.c
+linking shared-object bindex/cruby.so
+
+current directory: /home/nmikuni/ruby-work/scafford/vendor/bundle/ruby/2.4.0/gems/bindex-0.5.0/ext/bindex
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 cruby.so ./.gem.20180701-83708-yz73g5/bindex
